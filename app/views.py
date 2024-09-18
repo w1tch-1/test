@@ -9,6 +9,8 @@ from .forms import RegistrationForm, LoginForm
 
 __all__ = ('index', 'load_user', 'registration', 'login',)
 
+# hi vlad
+
 
 @login_manager.user_loader
 def load_user(user_id):
