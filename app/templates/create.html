@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+    <form method="post">
+        <label for="text">Create: </label>
+        <input id="text" type="text" name="post_text" placeholder="Type your post..." required>
+        <input type="submit" value="Enter">
+    </form>
+</body>
+{% endblock %}

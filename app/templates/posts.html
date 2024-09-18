@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <h1><a href="/view-profiles/{{ user.id }}">{{ user.username }}</a></h1>
+    <h1>{{ post.text }}</h1>
+    <h1>{{ date }}</h1>
+<div id="posts">
+    {% for post in posts %}
+    <h3>{{ post }}</h3>
+
+  {% endfor %}
+</div>
+
+  <input type="text" id="new-post">
+  <button id="btn">Send</button>
+  <script src="/static/js/index.js"></script>
+{% endblock %}

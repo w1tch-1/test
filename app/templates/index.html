@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Main Page</h1>
+    {% for post in posts %}
+        <div class="post">
+            <p>Пост: {{ post.id }} {{ post.text }}</p>
+            <a href="/view-post/{{ post.id }}">See details</a>
+            <a class="delete-link" href="{{ url_for('delete_post') }}?id={{ post.id }}">delete</a>
+        </div>
+    {% endfor %}
+{% endblock %}

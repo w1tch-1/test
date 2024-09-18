@@ -1,0 +1,114 @@
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.post p {
+    margin: 0;
+}
+
+.delete-link {
+    color: red;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+    .post {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="submit"] {
+        margin-bottom: 10px;
+    }
+}
+
+/* Medium devices (between 576px and 992px) */
+@media (min-width: 576px) and (max-width: 992px) {
+    .post {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+/* Large devices (992px and above) */
+@media (min-width: 992px) {
+    .post {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin: 25px;
+    }
+
+    .container {
+        padding: 25px;
+    }
+}

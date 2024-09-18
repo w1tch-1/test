@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+<div class="container">
+    {% block content %}
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+        <form method="post">
+            {{ forms.hidden_tag() }}
+
+            {{ forms.username.label }}
+            {{ forms.username(size=20) }}
+
+            {{ forms.email.label }}
+            {{ forms.email(size=20) }}
+
+            {{ forms.password.label }}
+            {{ forms.password(size=20) }}
+
+            {{ forms.repeat_password.label }}
+            {{ forms.repeat_password(size=20) }}
+
+            {{ forms.submit(size=20) }}
+        </form>
+    {% endblock %}
+</div>
